@@ -1,4 +1,3 @@
-name: zmk-keyboard-keyboard-squared
-build:
+name: zmk-keyboard-kb-sq
   settings:
     board_root: .

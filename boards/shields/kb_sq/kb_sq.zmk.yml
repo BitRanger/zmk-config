@@ -3,8 +3,8 @@
 # for instructions.
 
 file_format: "1"
-id: keyboard_squared
-name: keyboard-squared
+id: kb_sq
+name: kb-sq
 type: shield
 
 # Set this to a URL that documents the keyboard.
@@ -20,5 +20,5 @@ requires:
   - nice_nano
 
 siblings:
-  - keyboard_squared_left
-  - keyboard_squared_right
+  - kb_sq_left
+  - kb_sq_right

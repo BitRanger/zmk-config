@@ -1,0 +1,16 @@
+if SHIELD_KB_SQ_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "kb-sq"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_KB_SQ_LEFT
+
+if SHIELD_KB_SQ_LEFT || SHIELD_KB_SQ_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_KB_SQ_LEFT || SHIELD_KB_SQ_RIGHT

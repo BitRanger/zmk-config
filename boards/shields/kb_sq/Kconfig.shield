@@ -1,0 +1,5 @@
+config SHIELD_KB_SQ_LEFT
+    def_bool $(shields_list_contains,kb_sq_left)
+
+config SHIELD_KB_SQ_RIGHT
+    def_bool $(shields_list_contains,kb_sq_right)

@@ -2,10 +2,15 @@
 // See https://zmk.dev/docs/development/hardware-integration/new-shield for more
 // instructions.
 
-#include "keyboard_squared.dtsi"
+#include "kb_sq.dtsi"
+
+&default_transform {
+    // Set this to the number of columns on the left side.
+    col-offset = <0>;
+};
 
 &kscan {
-    // Replace these comments with the GPIO pins in the matrix for the left side.
+    // Replace these comments with the GPIO pins in the matrix for the right side.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
     col-gpios
         = <&gpio1 10 GPIO_ACTIVE_HIGH>
@@ -16,12 +21,3 @@
         , <&gpio1 5 GPIO_ACTIVE_HIGH>
         ;
 };
-
-//&kscan {
-//    // Replace these comments with the GPIO pins in the matrix for the left side.
-//    // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
-//    col-gpios
-//        = <&pro_micro 0 GPIO_ACTIVE_HIGH>
-//        , <&pro_micro 0 GPIO_ACTIVE_HIGH>
-//        ;
-//};
